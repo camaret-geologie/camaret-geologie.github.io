@@ -1,0 +1,11 @@
+<script>
+for (let p of document.querySelectorAll("p")) {
+    let ta = document.createElement("textarea");
+    ta.textContent = p.textContent;
+    ta.style.width = "100%";
+    ta.style.height = "9em";
+    ta.spellcheck = true;
+    p.parentElement.insertBefore(ta, p);
+    p.parentElement.removeChild(p);
+}
+</script>

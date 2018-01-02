@@ -1,0 +1,11 @@
+<!-- -*- mode: html; -*- -->
+<div id="navigation">
+  <ul>
+    <div id="listeNav">
+      <a href="accueil"><li>Accueil</li></a>
+      <a href="correjou"><li>La plage du Correjou</li></a>
+      <a href="mortAnglaise"><li>Le pli anticlinal de la mort Anglaise</li></a>
+      <a href="plageVeryach"><li>La plage de Veryac'h</li></a>
+    </div>
+  </ul>
+</div>

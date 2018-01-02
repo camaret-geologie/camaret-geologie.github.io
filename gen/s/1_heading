@@ -1,0 +1,9 @@
+<!-- -*- mode: html; -*- -->
+<div id="entete">
+  <h1>
+    <div class="h1-inside">
+      <div class="title-icon-container"><img src="../s/i/icon.png" alt="Icone carrés vert ; green squares icon" heigh="32" width="32"/></div>
+      <div class="padded-title">Compte rendu de sortie géologique à Camaret - Crozon
+    </div>
+  </h1>
+</div>

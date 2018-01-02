@@ -1,0 +1,406 @@
+/* ==============================================
+   FEUILLE DE STYLES DES GABARITS HTML/CSS
+   © Elephorm & Alsacreations.com
+   Conditions d'utilisation:
+   http://creativecommons.org/licenses/by/2.0/fr/
+   ============================================== */
+
+
+/* --- STYLES DE BASE POUR LE TEXTE ET LES PRINCIPAUX ÉLÉMENTS --- */
+
+/* Page */
+html {
+	font-size: 100%; /* Voir -> Note 1 à la fin de la feuille de styles. */
+}
+body {
+	margin: 0;
+	padding: 10px 20px; /* Note -> 2 */
+	font-family: Verdana, "Bitstream Vera Sans", "Lucida Grande", sans-serif; /* 3 */
+	font-size: 100%; /* -> 4 */
+	line-height: 1.25; /* -> 5 */
+	color: black;
+	background: white;
+}
+
+/* Titres */
+h1, h2, h3, h4, h5, h6 {
+	margin: 1em 0 .5em 0; /* -> 6 */
+}
+h1, h2 {
+	font-family: Georgia, "Bitstream Vera Serif", Norasi, serif;
+	font-weight: normal; /* -> 7 */
+}
+h1 {
+	font-size: 3em; /* -> 8 */
+	font-style: italic;
+}
+h2 {font-size: 200%;}
+h3 {font-size: 130%;}
+h4 {font-size: 120%;}
+
+/* Listes */
+ul, ol {
+	margin: .75em 0 .75em 24px;
+	padding: 0; /* -> 9 */
+}
+ul {
+	list-style: square;
+}
+li {
+	margin: 0;
+	padding: 0;
+}
+
+/* Paragraphes */
+p {
+	margin: .75em 0;
+}
+li p, blockquote p {
+	margin: .5em 0;
+}
+
+/* Citations */
+blockquote, q {
+	font-size: 130%;
+	font-style: italic;
+	font-family: Georgia, "Bitstream Vera Serif", Norasi, serif;
+}
+blockquote {
+	margin: .75em 0 .75em 24px;
+}
+cite {
+	font-style: italic;
+}
+
+/* Liens */
+a {
+	color: mediumblue;
+	text-decoration: underline;
+}
+ a:hover, a:focus {
+	color: crimson;
+}
+a img {
+	border: none; /* -> 10 */
+}
+
+/* Divers éléments de type en-ligne */
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: bold;
+	color: dimgray;
+}
+
+
+/* --- STYLES POUR CERTAINS CONTENUS DES GABARITS --- */
+
+pre, code {
+	font-size: 100%;
+	font-family: "Bitstream Vera Mono", "Lucida Console", "Courier New", monospace;
+}
+pre {
+	width: 90%;
+	overflow: auto;
+	overflow-y: hidden;
+	margin: .75em 0;
+	padding: 12px;
+	background: #eee;
+	color: #555;
+}
+pre strong {
+	font-weight: normal;
+	color: black;
+}
+#copyright {
+	margin: 20px 0 5px 0;
+	text-align: right;
+	font-size: 100%;
+	color: #848F63;
+}
+#copyright a {
+	color: #848F63;
+	text-decoration: none;
+}
+#copyright a:hover, #copyright a:focus {
+	text-decoration: underline;
+}
+
+
+/* --- NOTES ---
+
+1.	Ce "font-size: 100%" est normalement inutile. On l'utilise uniquement
+	pour éviter un bug de redimensionnement du texte dans Internet Explorer.
+
+2.	Par défaut, les navigateurs ont un padding (ou, pour certains, un
+	margin) de 6px pour l'élément BODY. C'est ce qui évite que le texte
+	ne soit complètement collé aux bords de la zone de visualisation du
+	navigateur lorsqu'on affiche une page «brute», sans mise en forme.
+	Mais ce retrait de 6px est un peu faiblard: on le renforce donc.
+	Notez bien que les feuilles de styles des gabarits pourront augmenter
+	ce retrait, ou bien l'annuler.
+	
+3.	Voici quelques exemples de collections cohérentes de fontes (propriété
+	CSS "font-family"):
+	font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-family: Georgia, "Bitstream Vera Serif", Norasi, serif;
+	font-family: "Times New Roman", Times, "Nimbus Roman No9 L", serif;
+		
+4.	Taille du texte de base de la page. Dépend de la taille du texte par
+	défaut du navigateur (souvent 16px), et des réglages de l'utilisateur.
+	À adapter en fonction de la fonte choisie, et du rendu souhaité.
+	En général, on utilisera une valeur de base entre .65em et 1em
+	(ou 65% et 100%).
+
+5.	Hauteur de ligne. À adapter en fonction de la fonte choisie, et des
+	besoins particuliers (lignes de texte longues ou courtes, titre ou
+	corps de texte...).
+
+6.	En général, les styles par défaut des navigateurs font que les marges
+	en haut et en bas des titres sont équivalentes. Ici, en diminuant la
+	marge du bas, on cherche à rapprocher le titre du contenu qu'il introduit.
+
+7.	Les styles par défaut des navigateurs mettent les titres en gras.
+	Si on souhaite passer à des caractères «normaux», on doit utiliser
+	font-size: normal.
+
+8.	Pour un élément en "font-size: 3em", la taille du texte sera le triple de
+	la taille du texte de l'élément parent.
+	À noter: on aurait pu écrire "font-size: 300%" pour le même résultat.
+
+9.	Par défaut, les listes UL et OL ont un retrait à gauche qui peut être,
+	suivant les navigateurs:
+	- un padding-left de 40px;
+	- ou bien un margin-left de 40px.
+	On met tout le monde d'accord avec une marge à gauche de 24px, et pas
+	de padding.
+
+10.	Les navigateurs donnent souvent aux images placées dans des liens
+	une bordure disgracieuse. On annule ce style souvent gênant en appliquant
+	un "border: none" aux images qui se trouvent à l'intérieur d'un lien.
+
+*/
+
+
+/* ==============================================
+   FEUILLE DE STYLES DES GABARITS HTML/CSS --- 04
+   © Elephorm & Alsacreations.com
+   Conditions d'utilisation:
+   http://creativecommons.org/licenses/by/2.0/fr/
+   ============================================== */
+
+
+/* --- COULEURS --- */
+
+/* Note: vous pouvez modifier simplement l'aspect de ce gabarit en modifiant
+   uniquement les couleurs de fond (propriétés background) et les couleurs
+   du texte (propriété color).
+   Pour modifier la disposition des blocs, voir plus bas dans la feuille de
+   styles la partie «positionnement». */
+
+/* Général */
+body {
+    background-color: #FFF;
+    background-image: url("i/bg_big.jpg");
+}
+a {
+    color: #FF6533;
+}
+a:hover, a:focus {
+    color: #FF4C00;
+}
+strong {
+    color: #A1B55D;
+}
+
+/* Navigation */
+#listeNav {
+    background: #958369;
+    padding: 9px;
+}
+#navigation a {
+    color: #E0F5CC;
+    background: #827056;
+    text-decoration: underline!important;
+    font-weight:bold;
+    margin: 4px 0 4px 0;
+}
+#navigation a:hover, #navigation a:focus {
+    background: #655339;
+}
+
+/* Contenu principal */
+#contenu {
+    color: #363B29;
+    background: #cbd888;
+}
+#contenu a {
+    color: #332510;
+}
+#contenu a:hover, #contenu a:focus {
+    color: #6E5122;
+}
+#contenu strong {
+    color: #181A12;
+}
+#contenu h2 {
+    color:#535535;
+    font-size: 200%;
+    padding: 3px 1.5%;
+    background-color: #9EBF6D;
+}
+#contenu h3 {
+    padding: 2px 0 3px 8px;
+    background-color: #9EBF6D;
+}
+
+
+/* --- POSITIONNEMENT --- */
+
+/* Page */
+body {
+    padding: 20px 50px; /* Voir -> Note 1 ci-dessous */
+}
+
+/* En-tête */
+#entete .h1-inside {
+    display: inline-flex;
+    width: 100%;
+}
+#entete h1 {
+    background-color: #669933;
+    color: white;
+    text-align: center;
+}
+#entete h1 .title-icon-container {
+    margin: auto 0;
+    height: 100%;
+}
+#entete h1 img {
+    float: left;
+    margin: 0.15em 0.4em;
+}
+#entete h1 .padded-title {
+    padding: 0 .8em;
+    width: 100%;
+}
+
+/* Menu de navigation */
+#navigation {
+    width: 18%;
+    float: left; /* -> 2 */
+}
+#navigation ul {
+    margin: 0;
+    padding: 20px 0;
+    list-style: none;
+}
+#navigation a {
+    display: block;
+    padding: 6px 6px 6px 10px;
+    line-height: 1.5;
+    font-size: 100%;
+    text-decoration: none;
+}
+
+/* Contenu */
+#contenu {
+    max-width: 1000px;
+    margin-top: 20px;
+    margin-left: 20%; /* -> 4 */
+    margin-bottom: 20px;
+    padding: 10px 20px;
+}
+#contenu > :first-child {
+    margin-top: 10px;
+}
+#contenu p, #contenu li {
+    line-height: 1.5;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Mention de paternité */
+#copyright {
+    margin-left: 20%;
+}
+
+#global {
+    text-align: center;
+}
+#contenu {
+    overflow: hidden;
+}
+
+#contenu > p, #contenu > ul {
+    text-align: left;
+}
+
+/* Le reste */
+.td-half {
+    width: 50%;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.lineImg {
+    margin: .14em 1em .4em 1em;
+}
+
+.t3 {
+    height:12em;
+    width:auto;
+}
+
+.imgTitle {
+    margin-top: 0;
+    font-size: 100%;
+    font-style: italic;
+}
+
+.mainImg {
+    margin: .14em 1em .4em 1em;
+}
+
+.cell {
+    display:inline-block;
+}
+
+.hidden {
+    display: none!important;
+}
+
+
+/* --- NOTES ---
+
+1.	Ce gabarit utilise du padding sur l'élément BODY pour créer un retrait
+esthétique tout autour du conteneur principal.
+Rappel: "padding: 20px 50px;" se lit ainsi:
+- padding-top et padding-bottom de 20px;
+- padding-left et padding-right de 50px.
+
+2.	C'est la propriété "float" qui nous permet de placer deux blocs
+côte-à-côte. Notez bien que l'élément flottant (ici, notre menu de
+navigation) doit être placé en premier dans le code HTML. Il est
+préférable de lui donner une largeur, ce que nous faisons ici avec un
+"width: 18%;".
+
+3.	Correction d'un bug d'Internet Explorer 6. Voir la dernière partie de
+http://blog.alsacreations.com/2006/10/20/294-impact-sur-le-rendu-de-la-
+mise-en-forme-du-code-html
+Dans l'idéal, on placera ce correctif dans une feuille séparée, appelée
+via un commentaire conditionnel visant IE6.
+
+4.	Les éléments flottants ne repoussent pas les blocs, mais repoussent
+uniquement leur contenu. Pour que notre bloc de contenu principal forme
+une colonne distincte du menu, on lui donne donc une marge à gauche de 20%.
+Il existe une autre technique pour adapter la largeur d'un bloc aux
+flottants qui le précèdent. On pourra lire l'article suivant:
+http://css.alsacreations.com/Faire-une-mise-en-page-sans-tableaux/
+design-trois-colonnes-positionnement-flottant
+
+*/
